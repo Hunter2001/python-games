@@ -204,7 +204,7 @@ chips = get_chips()
 while True:
 
     # WHEN THE DECK IS EMPTY, SHUFFLE IT AND START A NEW GAME
-    if new_deck .all_cards == []:
+    if len(new_deck.all_cards) < 12:
         new_deck = Deck()
         new_deck.shuffle()
         print('New deck shuffled!')
