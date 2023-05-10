@@ -84,7 +84,7 @@ class Player(Participant):
     def show_cards(self):
         print(f"{self.name}'s hand:")
         for card in self.all_cards:
-            print(f'| {card.suit} {card.rank} |')
+            print(f'| {card} |')
         print('Total value: ', self.count_cards_value())
         print('\n')
 
@@ -95,7 +95,7 @@ class Dealer(Participant):
 
     def show_cards(self):
         print("Dealer's hand:")
-        print(f'| {self.all_cards[0].suit} {self.all_cards[0].rank} |')
+        print(f'| {self.all_cards[0]} |')
         for card in self.all_cards[1:]:
             print('| X |')
         # Show dealers cards mode
